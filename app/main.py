@@ -3,6 +3,8 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+fake_items_db = ("a":"b"::"c")
+
 @app.get("/")
 def root():
     return { "time": datetime.now() }
@@ -10,3 +12,8 @@ def root():
  @app.get("/")
     ...: async def root():
     ...:     return {"message": "Hello World"}  
+ 
+app.get("/")^M
+    ...: async def root():^M
+    ...:     return {"message": "Hello World"}
+    ...:  @app.get{'fish/':"trout"}
