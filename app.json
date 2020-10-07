@@ -2,3 +2,22 @@
   "name": "FastAPI Base",
   "description": "A basic FastAPI app"
 }
+from datetime import datetime
+from fastapi import FastAPI
+
+app = FastAPI()
+
+fake_items_db = ("a":"b"::"c")
+
+@app.get("/")
+def root():
+    return { "time": datetime.now() }
+
+ @app.get("/")
+    ...: async def root():
+    ...:     return {"message": "Hello World"}  
+ 
+app.get("/")^M
+    ...: async def root():^M
+    ...:     return {"message": "Hello World"}
+    ...:  @app.get{'fish/':"trout"}
