@@ -6,3 +6,7 @@ app = FastAPI()
 @app.get("/")
 def root():
     return { "time": datetime.now() }
+
+ @app.get("/")
+    ...: async def root():
+    ...:     return {"message": "Hello World"}  
