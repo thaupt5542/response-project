@@ -13,7 +13,3 @@ def root():
     ...: async def root():
     ...:     return {"message": "Hello World"}  
  
-app.get("/")^M
-    ...: async def root():^M
-    ...:     return {"message": "Hello World"}
-    ...:  @app.get{'fish/':"trout"}
